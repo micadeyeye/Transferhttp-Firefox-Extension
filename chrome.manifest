@@ -1,0 +1,5 @@
+content	httpsessionmobility	content/
+locale	httpsessionmobility	en-US	locale/en-US
+skin	httpsessionmobility	classic/1.0	skin/
+overlay	chrome://browser/content/browser.xul	chrome://httpsessionmobility/content/sessionmobility.xul
+style chrome://httpsessionmobility/content/preferences_gui.xul chrome://httpsessionmobility/content/general.css

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://httpsessionmobility/locale/en-US/main.dtd">
+<overlay id="TutTB-Overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<toolbox id="navigator-toolbox">
+	<toolbar id="toolbar-menubar">
+	<toolbaritem id="menubars-item">
+		<menubar id="main-menubar">
+        <menu label="&httpMobilitymenu.label;" id="mobility_menu" accesskey="&httpMobilitymenu.key;">
+		<menupopup>
+		<menuitem label="&preferencesmenu.label;" id="Preferences" oncommand="preferences_listener();"/>
+		<menuitem label="&helpmenu.label;"/>
+		</menupopup>
+		
+		</menu>
+	</menubar>
+	</toolbaritem>
+	</toolbar>
+    </toolbox>
+
+<!-- Extend Firefox status bar -->
+
+    <statusbar id="status-bar">
+       <!-- <image id="urn:mozilla:httpsession:StatusIcon" src = "chrome://httpsessionmobility/skin/errorIcon-sm.png"/>
+-->
+<statusbarpanel id="httpMobilityStatusBar">
+	<label class="text_css" id="urn:mozilla:httpsession:msgNotification" value="&msgNotification.label;"/>
+	<label class="text_css" id="urn:mozilla:httpsession:sipMessageTo" value="&sipToAddr.label;"/>
+	<textbox id="urn:mozilla:httpsession:sipToAddrValue" onfocus="loadSipToAddrValue();" onchange="storeSipToAddrValue();"/>
+        <menulist id="status-menu">
+	<menupopup id="urn:mozilla:httpsession:connectionCommands">
+	<menuitem label="&sipProcess.label;" id="urn:mozilla:httpsession:sipProcess"/>
+	<menuseparator/>
+	<menuitem label="&sipRegisterInfo.label;" id="urn:mozilla:httpsession:sipRegisterInfo"  oncommand="sipRegisterCommand();"/>
+	<menuitem label="&sipDeregister.label;" id="urn:mozilla:httpsession:sipDeregister" oncommand="sipDeregisterCommand();"/>
+	<menuseparator/>
+	<menuitem label="&makecall.label;" id="urn:mozilla:httpsession:makecall" oncommand="sipmakecallCommand();"/>
+	<menuseparator/>
+	<menuitem label="&contentSharing.label;" id="urn:mozilla:httpsession:sessionTransfer" oncommand="contentSharingCommand();"/>
+	<menuitem label="&sessionTransfer.label;" id="urn:mozilla:httpsession:sessionTransfer" oncommand="webSessionTransferCommand();"/>
+	<menuseparator/>
+	<menuitem label="&acceptTransfer.label;" id="urn:mozilla:httpsession:acceptTransfer" oncommand="retrieveURL();"/>
+	
+	</menupopup>
+	</menulist>
+        </statusbarpanel>
+	</statusbar>
+	<script type="application/x-javascript" src="chrome://httpsessionmobility/content/xpcomInitUtils.js" />
+	<script type="application/x-javascript" src="chrome://httpsessionmobility/content/preferences_gui.js" />
+<script type="application/x-javascript" src="chrome://httpsessionmobility/content/overlay.js" />
+</overlay>

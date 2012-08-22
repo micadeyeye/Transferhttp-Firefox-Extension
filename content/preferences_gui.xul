@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<?xml-stylesheet href="chrome://httpsessionmobility/skin/general.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://httpsessionmobility/locale/en-US/main.dtd">
+<dialog id = "preferences_gui" 
+xmlns = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+xmlns:html = "http://www.w3.org/1999/xhtml"
+width = "400"
+height = "340"
+ondialogaccept = "return storeProfileInfo();"
+onload = "return loadProfileInfo();"
+persist = "screenX screenY width height"
+title = "&title.window;"
+windowtype = "indexWindow">
+	
+	<script type="application/x-javascript" src="chrome://httpsessionmobility/content/xpcomInitUtils.js" />
+	<script type="application/x-javascript" src="chrome://httpsessionmobility/content/preferences_gui.js" />
+	
+	<html:link rel="Shortcut Icon" href="chrome://httpsessionmobility/skin/classic/httpsessionmobility.ico"/>
+<spacer flex="1" height="25"/>
+<tabbox id="tabbox_css" flex="1">
+	<tabs id="tabs_css" flex="1">
+					<tab label="&profile.label;" id="tab_css"/>
+					<tab label="&sip.label;" id="tab_css"/>
+					<tab label="&ims.label;" id="tab_css"/>
+	</tabs>
+	<tabpanels flex="1">
+
+					<tabpanel flex="1">
+		
+		
+			<grid flex="1">
+				<columns>
+					<column flex="1"/>
+					<column flex="2"/>
+				</columns>
+				<rows>
+					<row>
+						<label class="text_css" id="urn:mozilla:httpsession:yourName" value="&yourName.label;"/>
+						<textbox id="urn:mozilla:httpsession:yourNameValue"/>
+					</row>
+					<row>
+						<label class="text_css" id="urn:mozilla:httpsession:emailAddress" value="&emailAddress.label;"/>
+						<textbox id="urn:mozilla:httpsession:emailAddressValue"/>
+					</row>
+					<row>
+						<label class="text_css" id="urn:mozilla:httpsession:organization" value="&organization.label;"/>
+						<textbox id="urn:mozilla:httpsession:organizationValue"/>
+					</row>
+					<row>
+						<spacer/>
+						<hbox>
+							<groupbox>
+							<spacer flex="1"/>
+<checkbox checked="true" id="urn:mozilla:httpsession:autoRegistration" label="&autoRegistration.checkbox;"/>
+							</groupbox>
+						</hbox>
+					</row>
+					<row>
+						<spacer height="15" flex="1"/>
+						<spacer height="15"  flex="1"/>
+					</row>
+				<row>
+					<vbox>
+					<groupbox>
+						<spacer flex="1"/>
+						<caption label="&choosePort.caption;"/>
+						<vbox>
+							<label id="urn:mozilla:httpsession:portNumber" value="&portNumber.label;"/>
+							<textbox id="urn:mozilla:httpsession:portNumberValue" size="5"/>
+						</vbox>
+							</groupbox>
+					</vbox>
+						<vbox>
+							<groupbox>
+							<spacer flex="1"/>
+							<caption label="&chooseMode.caption;"/>
+				<radiogroup id="urn:mozilla:httpsession:modeValue">
+			<radio value="SIP" label="&sipMode.radiobutton;"/>
+			<radio value="IMS" label="&imsMode.radiobutton;"/>
+				</radiogroup>
+							</groupbox>				
+						</vbox>
+					</row>
+				</rows>
+			</grid>
+			
+			
+		
+		
+		
+		
+	</tabpanel>
+
+	<tabpanel flex="1">
+		
+		
+			<grid flex="1">
+				<columns>
+					<column flex="1"/>
+					<column flex="2"/>
+				</columns>
+				<rows>
+					<row>
+						<label class="text_css" id="urn:mozilla:httpsession:sipAddress" value="&sipAddress.label;"/>
+						<textbox id="urn:mozilla:httpsession:sipAddressValue"/>
+					</row>
+					<row>
+						<label class="text_css" id="urn:mozilla:httpsession:sipProxy" value="&sipProxy.label;"/>
+						<textbox id="urn:mozilla:httpsession:sipProxyValue"/>
+					</row>
+					<row>
+						<label class="text_css" id="urn:mozilla:httpsession:sipPassword" value="&sipPassword.label;"/>
+						<textbox id="urn:mozilla:httpsession:sipPasswordValue" type="password"/>
+					</row>
+					
+				</rows>
+			</grid>
+			
+		
+		
+		
+		
+	</tabpanel>
+
+
+	<tabpanel flex="1">
+	
+		
+						<grid flex="1">
+						<columns>
+						<column flex="1"/>
+						<column flex="2"/>
+						</columns>
+						<rows>
+						<row>
+							<label class="text_css" id="urn:mozilla:httpsession:imsPublicIdentity" value="&imsPublicUserIdentity.label;"/>
+							<textbox id="urn:mozilla:httpsession:imsPublicUserIdentityValue"/>
+						</row>
+						<row>
+							<label class="text_css" id="urn:mozilla:httpsession:imsPrivateUserIdentity" value="&imsPrivateUserIdentity.label;"/>
+							<textbox id="urn:mozilla:httpsession:imsPrivateUserIdentityValue"/>
+						</row>
+						<row>
+							<label class="text_css" id="urn:mozilla:httpsession:imsProxyCSCF" value="&imsProxyCSCF.label;"/>
+							<textbox id="urn:mozilla:httpsession:imsProxyCSCFValue"/>
+						</row>
+						<row>
+							<label class="text_css" id="urn:mozilla:httpsession:imsRealm" value="&imsRealm.label;"/>
+							<textbox id="urn:mozilla:httpsession:imsRealmValue"/>
+						</row>
+						<row>
+							<label class="text_css" id="urn:mozilla:httpsession:imsPassword" value="&imsPassword.label;"/>
+							<textbox id="urn:mozilla:httpsession:imsPasswordValue" type="password"/>
+						</row>
+						
+						</rows>
+						</grid>
+						
+					
+			
+					
+						
+	</tabpanel>
+
+</tabpanels>
+
+</tabbox>
+
+</dialog>

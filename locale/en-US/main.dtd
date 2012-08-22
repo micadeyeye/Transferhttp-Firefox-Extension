@@ -1,0 +1,53 @@
+<!ENTITY title.window "HTTP Session Mobility">
+
+<!--Overlay menu definitions-->
+<!ENTITY httpMobilitymenu.label "HTTP Mobility">
+<!-- Added on Mar. 25, 2007 -->
+<!ENTITY sessionTransfer.label "Transfer Session">
+<!ENTITY contentSharing.label "Content Sharing">
+<!ENTITY acceptTransfer.label "Accept Session">
+<!-- Added on Mar. 14, 2007 -->
+<!ENTITY makecall.label "Make a Call">
+<!ENTITY preferencesmenu.label "Preferences">
+<!ENTITY helpmenu.label "Help">
+
+<!--Overlay menu definitions-->
+<!ENTITY httpMobilitymenu.key "M">
+
+
+<!--Pop Up Window definitions-->
+<!ENTITY profile.label "Profile">
+<!ENTITY sip.label "SIP">
+<!ENTITY ims.label "IMS">
+<!ENTITY imsPublicUserIdentity.label "Public User Identity">
+<!ENTITY imsPrivateUserIdentity.label "Private User Identity">
+<!ENTITY imsProxyCSCF.label "Proxy CSCF">
+<!ENTITY imsRealm.label "Realm">
+<!ENTITY imsPassword.label "Password">
+<!ENTITY imsCancel.label "Cancel">
+<!ENTITY imsSubmit.label "Submit">
+
+<!ENTITY sipAddress.label "SIP Address">
+<!ENTITY sipProxy.label "SIP Proxy">
+<!ENTITY sipPassword.label "Password">
+
+<!ENTITY yourName.label "Your Name">
+<!ENTITY emailAddress.label "Email Address">
+<!ENTITY organization.label "Organization">
+<!ENTITY autoRegistration.checkbox "Automatic Registration">
+<!ENTITY chooseMode.caption "Choose Mode">
+<!ENTITY sipMode.radiobutton "SIP Mode">
+<!ENTITY imsMode.radiobutton "IMS Mode">
+<!ENTITY choosePort.caption "Set Port">
+<!ENTITY portNumber.label "Port Number">
+
+<!--Added on Jan. 25, 2008-->
+<!ENTITY sipProcess.label "Choose a Process">
+<!ENTITY sipRegisterInfo.label "Register Client">
+<!ENTITY sipDeregister.label "De-register Client">
+
+<!--Added on Jan. 29, 2008-->
+<!ENTITY sipToAddr.label "To :">
+
+<!--Added on Feb. 22, 2008-->
+<!ENTITY msgNotification.label "">

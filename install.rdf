@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<Description about="urn:mozilla:install-manifest">
+		<em:id>httpsessionmobility@adeyeye.michael</em:id>
+		<em:name>HTTP Session Mobility</em:name>
+		<em:version>1.3</em:version>
+		<em:creator>Adeyeye Michael</em:creator>
+		<em:description>Transfer or share your http sessions between user agents</em:description>
+		<em:homepageURL>http://www.ngportal.net/research</em:homepageURL>
+		<!--<em:updateURL>https://addons.mozilla.org/update/VersionCheck.php?reqVersion=%REQ_VERSION%&id=%ITEM_ID%&version=%ITEM_VERSION%&maxAppVersion=%ITEM_MAXAPPVERSION%&status=%ITEM_STATUS%&appID=%APP_ID%&appVersion=%APP_VERSION%&appOS=%APP_OS%&appABI=%APP_ABI%</em:updateURL>  Commented for ff3 //-->
+		<em:targetPlatform>Linux</em:targetPlatform>
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- firefox -->
+				<em:minVersion>1.5</em:minVersion>
+				<em:maxVersion>3.5.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+	</Description>
+</RDF>

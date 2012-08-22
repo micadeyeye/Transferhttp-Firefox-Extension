@@ -1,0 +1,15 @@
+.dialog-box-content {
+   	background-color: #ffffff;
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: .9em;
+}
+tab {
+  	text-align: center;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 2px;
+	height: 25px !important;
+}
+.httpMobilityStatusIcon {
+	background: url(chrome://httpsessionmobility/skin/errorIcon-sm.png);
+}
